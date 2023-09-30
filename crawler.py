@@ -3,7 +3,7 @@ import requests
 import re
 
 
-def crawler_machine(numb):
+def crawler_machine(numb:int):
     url = 'https://exam.toeic.co.kr/receipt/examSchList.php'
     contents = []
 
@@ -23,6 +23,3 @@ def crawler_machine(numb):
         contents[i] = re.sub("\n", "", contents[i]).strip().replace("    ", "")
     
     return contents[numb]
-
-
-print(crawler_machine(0))
