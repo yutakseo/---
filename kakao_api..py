@@ -14,7 +14,7 @@ headers = {
 }
 data = {
     "template_object" : json.dumps({ "object_type" : "text",
-                                     "text" : "%s" %date,
+                                     "text" : "%s" ,
                                      "link" : {}
     })
 }
